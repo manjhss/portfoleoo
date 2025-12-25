@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fuzzy_Bubbles } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
 const FuzzyBubbles = Fuzzy_Bubbles({
@@ -19,8 +20,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={FuzzyBubbles.variable}>
-      <body>{children}</body>
+    <html lang="en" className={FuzzyBubbles.variable} suppressHydrationWarning>
+      <body>
+        {" "}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
