@@ -1,0 +1,36 @@
+import Link from "next/link";
+import { portfolioData } from "@/data/portfolio";
+import { IconSvgElement } from "@hugeicons/react";
+import IconButton from "../icon-button";
+import {
+  GithubIcon,
+  Linkedin02Icon,
+  Mail01Icon,
+  TwitterIcon,
+} from "@hugeicons/core-free-icons";
+
+const iconComponents: Record<string, IconSvgElement> = {
+  github: GithubIcon,
+  linkedin: Linkedin02Icon,
+  twitter: TwitterIcon,
+  email: Mail01Icon,
+};
+
+export function SocialLinks() {
+  const links = portfolioData.socialLinks;
+
+  return (
+    <div className="flex gap-2 mb-6">
+
+      
+      {links.map((link) => {
+        const icon = iconComponents[link.platform];
+        return (
+          <Link key={link.platform} href={link.url} target="_blank">
+            <IconButton icon={icon} />
+          </Link>
+        );
+      })}
+    </div>
+  );
+}
