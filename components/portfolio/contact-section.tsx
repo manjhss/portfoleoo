@@ -1,22 +1,23 @@
 import { portfolioData } from "@/data/portfolio";
 import IconButton from "../icon-button";
 import { Mail01Icon } from "@hugeicons/core-free-icons";
+import Link from "next/link";
 
 export function ContactSection() {
   const { email } = portfolioData.profile;
 
   return (
     <div>
-      <p className="text-sm text-orange-500 my-4">
-        need a committed developer to build your product,
-        <br />
+      <p className="text-sm text-orange-500 mb-6">
+        need a committed developer to build or improve your
+        product, <br className="hidden sm:block" />
         feel free to connect -
       </p>
-      <div className="flex items-center gap-2 mb-8">
-        <IconButton icon={Mail01Icon} />
-        <a href={`mailto:${email}`} className="text-sm hover:underline">
+      <div className="flex items-center gap-2">
+        <IconButton icon={Mail01Icon} variant={"secondary"} className="cursor-auto" />
+        <Link href={`mailto:${email}`} className="text-sm hover:underline">
           {email}
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import {
   Item,
   ItemActions,
   ItemContent,
+  ItemDescription,
   ItemHeader,
   ItemTitle,
 } from "@/components/ui/item";
@@ -10,19 +11,21 @@ import IconButton from "../icon-button";
 import { GithubIcon, Link02Icon } from "@hugeicons/core-free-icons";
 import Link from "next/link";
 
-interface ProjectItemProps {
+interface ProjectCardProps {
   name: string;
+  description: string;
   imageUrl: string;
   githubUrl: string;
   previewUrl: string;
 }
 
-export default function ProjectItem({
+export default function ProjectCard({
   name,
+  description,
   imageUrl,
   githubUrl,
   previewUrl,
-}: ProjectItemProps) {
+}: ProjectCardProps) {
   return (
     <Item variant="outline">
       <ItemHeader>
@@ -36,13 +39,14 @@ export default function ProjectItem({
       </ItemHeader>
       <ItemContent>
         <ItemTitle>{name}</ItemTitle>
+        <ItemDescription>{description}</ItemDescription>
       </ItemContent>
-      <ItemActions>
+      <ItemActions className="gap-1">
         <Link href={githubUrl} target="_blank">
-          <IconButton icon={GithubIcon} />
+          <IconButton icon={GithubIcon} variant={"secondary"} />
         </Link>
         <Link href={previewUrl} target="_blank">
-          <IconButton icon={Link02Icon} />
+          <IconButton icon={Link02Icon} variant={"secondary"} />
         </Link>
       </ItemActions>
     </Item>

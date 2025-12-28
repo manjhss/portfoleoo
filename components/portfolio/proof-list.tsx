@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { portfolioData } from "@/data/portfolio";
 import IconButton from "../icon-button";
-import { GitMergeIcon } from "@hugeicons/core-free-icons";
+import { GitMergeIcon, LinkSquare02Icon } from "@hugeicons/core-free-icons";
 import {
   Item,
   ItemContent,
@@ -15,18 +15,20 @@ export function ProofList() {
   const proofs = portfolioData.proofOfWorks;
 
   return (
-    <div className="space-y-2 mb-6">
+    <div>
       <SectionTitle title="proof of works" />
 
       <ItemGroup>
         {proofs.map((item) => (
           <Item key={item.id} variant="outline" size="sm">
             <ItemMedia>
-              <IconButton icon={GitMergeIcon} />
+              <IconButton icon={GitMergeIcon} className="bg-violet-400/90" />
             </ItemMedia>
             <ItemContent>
               <Link href={item.url} className="hover:underline" target="_blank">
-                <ItemTitle>{item.text}</ItemTitle>
+                <ItemTitle>
+                  {item.text} <IconButton icon={LinkSquare02Icon} variant={"ghost"} size={"icon-sm"} />
+                </ItemTitle>
               </Link>
             </ItemContent>
           </Item>

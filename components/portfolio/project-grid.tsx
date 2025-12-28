@@ -1,20 +1,58 @@
+"use client";
+
 import { portfolioData } from "@/data/portfolio";
-import ProjectItem from "./project-card";
+import ProjectCard from "./project-card";
 import SectionTitle from "../section-title";
 import { ItemGroup } from "../ui/item";
+import ProjectCardTwo from "./project-card-two";
+import { useState } from "react";
+import IconButton from "../icon-button";
+import {
+  DashboardSquare01Icon,
+  LeftToRightListDashIcon,
+} from "@hugeicons/core-free-icons";
 
 export function ProjectGrid() {
   const projects = portfolioData.projects;
 
-  return (
-    <div className="mb-6">
-      <SectionTitle title="projects" />
+  const [cardStyle, setCardStyle] = useState<"tile" | "large-icon">(
+    "large-icon"
+  );
 
-      <ItemGroup className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {projects.map((project) => (
-          <ProjectItem key={project.id} {...project} />
-        ))}
-      </ItemGroup>
+  return (
+    <div>
+      <div className="flex items-start justify-between">
+        <SectionTitle title="projects" />
+
+        <div className="space-x-1">
+          <IconButton
+            icon={LeftToRightListDashIcon}
+            onClick={() => setCardStyle("tile")}
+            variant={cardStyle === "tile" ? "outline" : "ghost"}
+            className="cursor-auto"
+            />
+          <IconButton
+            icon={DashboardSquare01Icon}
+            onClick={() => setCardStyle("large-icon")}
+            variant={cardStyle === "large-icon" ? "outline" : "ghost"}
+            className="cursor-auto"
+          />
+        </div>
+      </div>
+
+      {cardStyle === "large-icon" ? (
+        <ItemGroup className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {projects.map((project) => (
+            <ProjectCard key={project.id} {...project} />
+          ))}
+        </ItemGroup>
+      ) : (
+        <ItemGroup className="gap-3">
+          {projects.map((project) => (
+            <ProjectCardTwo key={project.id} {...project} />
+          ))}
+        </ItemGroup>
+      )}
     </div>
   );
 }
