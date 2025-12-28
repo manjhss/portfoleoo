@@ -3,8 +3,7 @@ export const portfolioData = {
     name: "Surendra Manjhi",
     username: "@manjhss",
     bio: "a full-stack developer and part-time harmoniumist",
-    avatar:
-      "https://lh3.googleusercontent.com/a/ACg8ocIupFiJg81HPz0fpQPI5cAtL2K1zfSXdR5HJWlRVKIoby07UWZP=s400-c",
+    avatar: "profile_pic.png",
     email: "manjhisurendra08@gmail.com",
   },
   socialLinks: [
@@ -29,6 +28,8 @@ export const portfolioData = {
     {
       id: 1,
       name: "memories",
+      description:
+        "lorem ipsum dolor sit amet consectetur adipisicing elit. voluptatem sint debitis soluta, reprehenderit unde animi aperiam reiciendis corporis dolorum accusantium eveniet a hic neque",
       imageUrl:
         "https://www.amarn.me/_next/image?url=%2Fimages%2Fchamaac.png&w=1920&q=75",
       githubUrl: "https://github.com/yourusername/memories",
@@ -37,6 +38,8 @@ export const portfolioData = {
     {
       id: 2,
       name: "motion-variants",
+      description:
+        "lorem ipsum dolor sit amet consectetur adipisicing elit. voluptatem sint debitis soluta, reprehenderit unde animi aperiam reiciendis corporis dolorum accusantium eveniet a hic neque",
       imageUrl:
         "https://www.amarn.me/_next/image?url=%2Fimages%2Fside.png&w=1920&q=75",
       githubUrl: "https://github.com/yourusername/memories",
