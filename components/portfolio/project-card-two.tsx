@@ -1,17 +1,18 @@
 import Image from "next/image";
+
 import {
   Item,
   ItemActions,
   ItemContent,
   ItemDescription,
-  ItemHeader,
+  ItemMedia,
   ItemTitle,
 } from "@/components/ui/item";
+import Link from "next/link";
 import IconButton from "../icon-button";
 import { GithubIcon, Link02Icon } from "@hugeicons/core-free-icons";
-import Link from "next/link";
 
-interface ProjectCardProps {
+interface ProjectCardTwoProps {
   name: string;
   description: string;
   imageUrl: string;
@@ -19,16 +20,16 @@ interface ProjectCardProps {
   previewUrl: string;
 }
 
-export default function ProjectCard({
+export default function ProjectCardTwo({
   name,
   description,
   imageUrl,
   githubUrl,
   previewUrl,
-}: ProjectCardProps) {
+}: ProjectCardTwoProps) {
   return (
     <Item variant="outline">
-      <ItemHeader>
+      <ItemMedia>
         <Image
           src={imageUrl}
           alt={name}
@@ -36,19 +37,21 @@ export default function ProjectCard({
           height={128}
           className="aspect-3/2 w-full rounded-sm object-cover"
         />
-      </ItemHeader>
+      </ItemMedia>
       <ItemContent>
         <ItemTitle>{name}</ItemTitle>
         <ItemDescription>{description}</ItemDescription>
       </ItemContent>
-      <ItemActions className="gap-1">
-        <Link href={githubUrl} target="_blank">
-          <IconButton icon={GithubIcon} variant={"secondary"} />
-        </Link>
-        <Link href={previewUrl} target="_blank">
-          <IconButton icon={Link02Icon} variant={"secondary"} />
-        </Link>
-      </ItemActions>
+      <ItemContent className="flex-none text-center">
+        <ItemActions className="gap-1">
+          <Link href={githubUrl} target="_blank">
+            <IconButton icon={GithubIcon} variant={"secondary"} />
+          </Link>
+          <Link href={previewUrl} target="_blank">
+            <IconButton icon={Link02Icon} variant={"secondary"} />
+          </Link>
+        </ItemActions>
+      </ItemContent>
     </Item>
   );
 }

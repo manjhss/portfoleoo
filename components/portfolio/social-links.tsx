@@ -8,6 +8,7 @@ import {
   Mail01Icon,
   TwitterIcon,
 } from "@hugeicons/core-free-icons";
+import { Button } from "../ui/button";
 
 const iconComponents: Record<string, IconSvgElement> = {
   github: GithubIcon,
@@ -20,14 +21,18 @@ export function SocialLinks() {
   const links = portfolioData.socialLinks;
 
   return (
-    <div className="flex gap-2 mb-6">
+    <div className="flex gap-1 items-center">
+      <Link href={""}>
+        <Button variant={"default"} size={"lg"} className="font-bold cursor-pointer">
+          resume
+        </Button>
+      </Link>
 
-      
       {links.map((link) => {
         const icon = iconComponents[link.platform];
         return (
           <Link key={link.platform} href={link.url} target="_blank">
-            <IconButton icon={icon} />
+            <IconButton icon={icon} variant={"secondary"} />
           </Link>
         );
       })}
