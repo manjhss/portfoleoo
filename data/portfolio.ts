@@ -7,9 +7,9 @@ export const portfolioData = {
     email: "manjhisurendra08@gmail.com",
   },
   socialLinks: [
-    { platform: "github", url: "https://github.com" },
-    { platform: "linkedin", url: "https://linkedin.com" },
-    { platform: "twitter", url: "https://twitter.com" },
+    { platform: "github", url: "https://github.com/manjhss" },
+    { platform: "linkedin", url: "https://linkedin.com/in/manjhss" },
+    { platform: "twitter", url: "https://x.com/manjhss" },
     { platform: "email", url: "mailto:manjhisurendra08@gmail.com" },
   ],
   proofOfWorks: [
@@ -27,23 +27,43 @@ export const portfolioData = {
   projects: [
     {
       id: 1,
-      name: "memories",
+      name: "my memories",
       description:
         "lorem ipsum dolor sit amet consectetur adipisicing elit. voluptatem sint debitis soluta, reprehenderit unde animi aperiam reiciendis corporis dolorum accusantium eveniet a hic neque",
       imageUrl:
         "https://www.amarn.me/_next/image?url=%2Fimages%2Fchamaac.png&w=1920&q=75",
-      githubUrl: "https://github.com/yourusername/memories",
-      previewUrl: "https://memories.example.com",
+      githubUrl: "https://github.com/manjhss/my-memories",
+      previewUrl: "https://my-memories-5zx7.vercel.app",
     },
     {
       id: 2,
-      name: "motion-variants",
+      name: "framer motion variants",
       description:
         "lorem ipsum dolor sit amet consectetur adipisicing elit. voluptatem sint debitis soluta, reprehenderit unde animi aperiam reiciendis corporis dolorum accusantium eveniet a hic neque",
       imageUrl:
         "https://www.amarn.me/_next/image?url=%2Fimages%2Fside.png&w=1920&q=75",
-      githubUrl: "https://github.com/yourusername/memories",
+      githubUrl: "https://github.com/manjhss/framer-motion-variants",
+      previewUrl: "https://fmv-web.vercel.app",
+    },
+    {
+      id: 3,
+      name: "be my valentine",
+      description:
+        "lorem ipsum dolor sit amet consectetur adipisicing elit. voluptatem sint debitis soluta, reprehenderit unde animi aperiam reiciendis corporis dolorum accusantium eveniet a hic neque",
+      imageUrl:
+        "https://www.amarn.me/_next/image?url=%2Fimages%2Fside.png&w=1920&q=75",
+      githubUrl: "https://github.com/manjhss/be-my-valentine",
       previewUrl: "https://memories.example.com",
+    },
+    {
+      id: 4,
+      name: "dogpedia",
+      description:
+        "lorem ipsum dolor sit amet consectetur adipisicing elit. voluptatem sint debitis soluta, reprehenderit unde animi aperiam reiciendis corporis dolorum accusantium eveniet a hic neque",
+      imageUrl:
+        "https://www.amarn.me/_next/image?url=%2Fimages%2Fside.png&w=1920&q=75",
+      githubUrl: "https://github.com/manjhss/Dogpedia",
+      previewUrl: "https://dogpedia-bay.vercel.app",
     },
   ],
 };
