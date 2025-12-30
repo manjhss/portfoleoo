@@ -22,7 +22,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={FuzzyBubbles.variable} suppressHydrationWarning>
       <body>
-        {" "}
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
