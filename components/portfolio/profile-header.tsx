@@ -5,12 +5,12 @@ import Highlight from "../highlight";
 import { SocialLinks } from "./social-links";
 
 export function ProfileHeader() {
-  const { name, username, bio, avatar } = portfolioData.profile;
+  const { name, username, avatar } = portfolioData.profile;
 
   return (
     <div>
       <div className="flex items-start justify-between">
-        <div className="flex items-center gap-3 mb-4">
+        <div className="flex items-center gap-3 mb-6">
           <Avatar className="h-12 w-12 rounded-full border-2 border-foreground">
             <AvatarImage src={avatar || "/placeholder.svg"} alt={name} />
             <AvatarFallback>
@@ -28,8 +28,13 @@ export function ProfileHeader() {
 
         <ModeToggle />
       </div>
+
       <p className="text-base text-muted-foreground mb-6">
-        <Highlight>{bio}</Highlight>
+        a <Highlight>full-stack developer</Highlight> and{" "}
+        <Highlight>curious learner</Highlight>.{" "}
+        <br className="hidden sm:block" />i vibe code responsibly — learn{" "}
+        <Highlight>deeply first</Highlight>, then{" "}
+        <Highlight>build with intuition</Highlight>.
       </p>
 
       <SocialLinks />
