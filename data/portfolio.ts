@@ -2,7 +2,7 @@ export const portfolioData = {
   profile: {
     name: "Surendra Manjhi",
     username: "@manjhss",
-    bio: "a full-stack developer and part-time harmoniumist",
+    bio: "a full-stack developer and curious learner. i vibe code responsibly — learn deeply first, then build with intuition.",
     avatar: "profile_pic.png",
     email: "manjhisurendra08@gmail.com",
   },
