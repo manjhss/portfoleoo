@@ -27,7 +27,7 @@ export default function ProjectCard({
   previewUrl,
 }: ProjectCardProps) {
   return (
-    <Item variant="outline">
+    <Item variant="muted" className="border-muted-foreground/10">
       <ItemHeader>
         <Image
           src={imageUrl}

@@ -8,12 +8,12 @@ export function ContactSection() {
 
   return (
     <div>
-      <p className="text-sm text-orange-500 mb-6">
+      <p className="text-sm text-orange-500 mb-6 font-medium">
         need a committed developer to build or improve your
         product, <br className="hidden sm:block" />
         feel free to connect -
       </p>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 font-medium">
         <IconButton icon={Mail01Icon} variant={"secondary"} className="cursor-auto" />
         <Link href={`mailto:${email}`} className="text-sm hover:underline">
           {email}

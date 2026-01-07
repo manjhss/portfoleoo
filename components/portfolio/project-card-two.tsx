@@ -28,7 +28,7 @@ export default function ProjectCardTwo({
   previewUrl,
 }: ProjectCardTwoProps) {
   return (
-    <Item variant="outline">
+    <Item variant="muted" className="border-muted-foreground/10">
       <ItemMedia>
         <Image
           src={imageUrl}

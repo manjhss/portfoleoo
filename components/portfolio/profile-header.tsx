@@ -21,7 +21,7 @@ export function ProfileHeader() {
             </AvatarFallback>
           </Avatar>
           <div>
-            <h1 className="text-base font-normal">{name}</h1>
+            <h1 className="text-base font-medium">{name}</h1>
             <p className="text-sm text-muted-foreground">{username}</p>
           </div>
         </div>
@@ -30,9 +30,10 @@ export function ProfileHeader() {
       </div>
 
       <p className="text-base text-muted-foreground mb-6">
-        a <Highlight>full-stack developer</Highlight> and{" "}
-        <Highlight>curious learner</Highlight>.{" "}
-        <br className="hidden sm:block" />i vibe code responsibly — learn{" "}
+        a <Highlight>full-stack web developer</Highlight> and{" "}
+        <Highlight>oss contributor</Highlight>.{" "}
+        <br className="hidden sm:block" />
+        yeah, i vibe code but responsibly — learn{" "}
         <Highlight>deeply first</Highlight>, then{" "}
         <Highlight>build with intuition</Highlight>.
       </p>

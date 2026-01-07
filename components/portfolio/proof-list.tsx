@@ -20,7 +20,7 @@ export function ProofList() {
 
       <ItemGroup>
         {proofs.map((item) => (
-          <Item key={item.id} variant="outline" size="sm">
+          <Item key={item.id} variant="muted" size="sm" className=" border-muted-foreground/10">
             <ItemMedia>
               <IconButton icon={GitMergeIcon} className="bg-violet-400/90" />
             </ItemMedia>

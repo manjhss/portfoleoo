@@ -2,7 +2,7 @@ export const portfolioData = {
   profile: {
     name: "Surendra Manjhi",
     username: "@manjhss",
-    bio: "a full-stack developer and curious learner. i vibe code responsibly — learn deeply first, then build with intuition.",
+    bio: "a full-stack web developer and curious learner. i vibe code responsibly — learn deeply first, then build with intuition.",
     avatar: "profile_pic.png",
     email: "manjhisurendra08@gmail.com",
   },
@@ -20,6 +20,11 @@ export const portfolioData = {
     },
     {
       id: 2,
+      text: "Added GameCard component",
+      url: "https://github.com/Lohit-pro/FakeStake/commit/9ee6200157ff5f26d168a2b45c8edaf69a40509b",
+    },
+    {
+      id: 3,
       text: "Break up Landing Page components into sub-components",
       url: "https://github.com/wasp-lang/open-saas/pull/214",
     },
@@ -53,7 +58,7 @@ export const portfolioData = {
       imageUrl:
         "https://www.amarn.me/_next/image?url=%2Fimages%2Fside.png&w=1920&q=75",
       githubUrl: "https://github.com/manjhss/be-my-valentine",
-      previewUrl: "https://memories.example.com",
+      previewUrl: "https://manjhss.github.io/be-my-valentine/",
     },
     {
       id: 4,

@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Fuzzy_Bubbles } from "next/font/google";
+import { Red_Hat_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
+import { portfolioData } from "@/data/portfolio";
 
-const FuzzyBubbles = Fuzzy_Bubbles({
+const RedHatMono = Red_Hat_Mono({
   variable: "--font-sans",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
   title: "Surendra Manjhi | @manjhss",
-  description:
-    "a full-stack developer and curious learner. i vibe code responsibly — learn deeply first, then build with intuition.",
+  description: portfolioData.profile.bio,
 };
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={FuzzyBubbles.variable} suppressHydrationWarning>
+    <html lang="en" className={RedHatMono.variable} suppressHydrationWarning>
       <body>
         <ThemeProvider
           attribute="class"
