@@ -2,8 +2,8 @@ export const portfolioData = {
   profile: {
     name: "Surendra Manjhi",
     username: "@manjhss",
-    bio: "a full-stack web developer and curious learner. i vibe code responsibly — learn deeply first, then build with intuition.",
-    avatar: "profile_pic.png",
+    bio: "A full-stack web developer and OSS contributor. Yeah, I vibe code responsibly — learn deeply first, then build with intuition.",
+    avatar: "https://ik.imagekit.io/manjhss/profile_pic.png?tr=q-100",
     email: "manjhisurendra08@gmail.com",
   },
   socialLinks: [
@@ -32,43 +32,30 @@ export const portfolioData = {
   projects: [
     {
       id: 1,
-      name: "my memories",
+      name: "My Memories",
       description:
-        "lorem ipsum dolor sit amet consectetur adipisicing elit. voluptatem sint debitis soluta, reprehenderit unde animi aperiam reiciendis corporis dolorum accusantium eveniet a hic neque",
-      imageUrl:
-        "https://www.amarn.me/_next/image?url=%2Fimages%2Fchamaac.png&w=1920&q=75",
+        "Drag, arrange, and design memories your way — on a collaborative canvas with cloud sync.",
+      imageUrl: "https://ik.imagekit.io/manjhss/50_1x_shots_so.png?tr=q-100",
       githubUrl: "https://github.com/manjhss/my-memories",
       previewUrl: "https://my-memories-5zx7.vercel.app",
     },
     {
       id: 2,
-      name: "framer motion variants",
+      name: "Motion Variants",
       description:
-        "lorem ipsum dolor sit amet consectetur adipisicing elit. voluptatem sint debitis soluta, reprehenderit unde animi aperiam reiciendis corporis dolorum accusantium eveniet a hic neque",
-      imageUrl:
-        "https://www.amarn.me/_next/image?url=%2Fimages%2Fside.png&w=1920&q=75",
+        "Unleash Stunning Animations in React with Ready-Made Motion Variants.",
+      imageUrl: "https://ik.imagekit.io/manjhss/888_1x_shots_so.png?tr=q-100",
       githubUrl: "https://github.com/manjhss/framer-motion-variants",
       previewUrl: "https://fmv-web.vercel.app",
     },
     {
       id: 3,
-      name: "be my valentine",
+      name: "Be My Valentine",
       description:
-        "lorem ipsum dolor sit amet consectetur adipisicing elit. voluptatem sint debitis soluta, reprehenderit unde animi aperiam reiciendis corporis dolorum accusantium eveniet a hic neque",
-      imageUrl:
-        "https://www.amarn.me/_next/image?url=%2Fimages%2Fside.png&w=1920&q=75",
+        "A fun interactive web app for valentine's couples to celebrate their love.",
+      imageUrl: "https://ik.imagekit.io/manjhss/257_1x_shots_so.png?tr=q-100",
       githubUrl: "https://github.com/manjhss/be-my-valentine",
       previewUrl: "https://manjhss.github.io/be-my-valentine/",
-    },
-    {
-      id: 4,
-      name: "dogpedia",
-      description:
-        "lorem ipsum dolor sit amet consectetur adipisicing elit. voluptatem sint debitis soluta, reprehenderit unde animi aperiam reiciendis corporis dolorum accusantium eveniet a hic neque",
-      imageUrl:
-        "https://www.amarn.me/_next/image?url=%2Fimages%2Fside.png&w=1920&q=75",
-      githubUrl: "https://github.com/manjhss/Dogpedia",
-      previewUrl: "https://dogpedia-bay.vercel.app",
     },
   ],
 };
