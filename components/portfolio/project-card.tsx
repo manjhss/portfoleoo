@@ -30,7 +30,7 @@ export default function ProjectCard({
     <Item variant="muted" className="border-muted-foreground/10">
       <ItemHeader>
         <Image
-          src={imageUrl}
+          src={imageUrl || "/placeholder.svg"}
           alt={name}
           width={128}
           height={128}
@@ -39,7 +39,7 @@ export default function ProjectCard({
       </ItemHeader>
       <ItemContent>
         <ItemTitle>{name}</ItemTitle>
-        <ItemDescription>{description}</ItemDescription>
+        <ItemDescription className="line-clamp-3">{description}</ItemDescription>
       </ItemContent>
       <ItemActions className="gap-1">
         <Link href={githubUrl} target="_blank">

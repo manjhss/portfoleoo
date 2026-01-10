@@ -30,10 +30,10 @@ export function ProfileHeader() {
       </div>
 
       <p className="text-base text-muted-foreground mb-6">
-        a <Highlight>full-stack web developer</Highlight> and{" "}
-        <Highlight>oss contributor</Highlight>.{" "}
+        A <Highlight>full-stack web developer</Highlight> and{" "}
+        <Highlight>OSS contributor</Highlight>.{" "}
         <br className="hidden sm:block" />
-        yeah, i vibe code but responsibly — learn{" "}
+        Yeah, I vibe code but responsibly — learn{" "}
         <Highlight>deeply first</Highlight>, then{" "}
         <Highlight>build with intuition</Highlight>.
       </p>

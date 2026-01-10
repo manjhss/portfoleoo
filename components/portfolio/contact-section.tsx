@@ -9,7 +9,7 @@ export function ContactSection() {
   return (
     <div>
       <p className="text-sm text-primary mb-6 font-medium">
-        need a committed developer to build or improve your
+        Need a committed developer to build or improve your
         product, <br className="hidden sm:block" />
         feel free to connect -
       </p>

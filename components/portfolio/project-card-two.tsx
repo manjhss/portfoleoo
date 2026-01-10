@@ -40,7 +40,7 @@ export default function ProjectCardTwo({
       </ItemMedia>
       <ItemContent>
         <ItemTitle>{name}</ItemTitle>
-        <ItemDescription>{description}</ItemDescription>
+        <ItemDescription className="line-clamp-3">{description}</ItemDescription>
       </ItemContent>
       <ItemContent className="flex-none text-center">
         <ItemActions className="gap-1">
