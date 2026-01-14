@@ -28,7 +28,7 @@ export default function ProjectCardTwo({
   previewUrl,
 }: ProjectCardTwoProps) {
   return (
-    <Item variant="muted" className="border-muted-foreground/10">
+    <Item variant="muted">
       <ItemMedia>
         <Image
           src={imageUrl}
@@ -40,7 +40,9 @@ export default function ProjectCardTwo({
       </ItemMedia>
       <ItemContent>
         <ItemTitle>{name}</ItemTitle>
-        <ItemDescription className="line-clamp-3">{description}</ItemDescription>
+        <ItemDescription className="leading-5">
+          {description}
+        </ItemDescription>
       </ItemContent>
       <ItemContent className="flex-none text-center">
         <ItemActions className="gap-1">

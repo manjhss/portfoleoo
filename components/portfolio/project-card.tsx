@@ -27,7 +27,7 @@ export default function ProjectCard({
   previewUrl,
 }: ProjectCardProps) {
   return (
-    <Item variant="muted" className="border-muted-foreground/10">
+    <Item variant="muted">
       <ItemHeader>
         <Image
           src={imageUrl || "/placeholder.svg"}
@@ -39,7 +39,7 @@ export default function ProjectCard({
       </ItemHeader>
       <ItemContent>
         <ItemTitle>{name}</ItemTitle>
-        <ItemDescription className="line-clamp-3">{description}</ItemDescription>
+        <ItemDescription className="leading-5">{description}</ItemDescription>
       </ItemContent>
       <ItemActions className="gap-1">
         <Link href={githubUrl} target="_blank">

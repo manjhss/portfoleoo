@@ -23,7 +23,7 @@ export function SocialLinks() {
   return (
     <div className="flex gap-1 items-center">
       <Link href={""}>
-        <Button variant={"default"} size={"lg"} className="font-semibold cursor-pointer">
+        <Button variant={"default"} size={"lg"} className="font-semibold text-base cursor-pointer">
           resume
         </Button>
       </Link>

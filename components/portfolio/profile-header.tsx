@@ -21,21 +21,17 @@ export function ProfileHeader() {
             </AvatarFallback>
           </Avatar>
           <div>
-            <h1 className="text-base font-medium">{name}</h1>
-            <p className="text-sm text-muted-foreground">{username}</p>
+            <h1 className="text-lg font-medium">{name}</h1>
+            <p className="text-base text-muted-foreground">{username}</p>
           </div>
         </div>
 
         <ModeToggle />
       </div>
 
-      <p className="text-base text-muted-foreground mb-6">
-        A <Highlight>full-stack web developer</Highlight> and{" "}
-        <Highlight>OSS contributor</Highlight>.{" "}
-        <br className="hidden sm:block" />
-        Yeah, I vibe code but responsibly — learn{" "}
-        <Highlight>deeply first</Highlight>, then{" "}
-        <Highlight>build with intuition</Highlight>.
+      <p className="text-lg text-muted-foreground mb-6">
+        a <Highlight>full-stack web developer</Highlight> and{" "}
+        <Highlight>oss contributor</Highlight>.
       </p>
 
       <SocialLinks />
