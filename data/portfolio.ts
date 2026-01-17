@@ -53,7 +53,7 @@ export const portfolioData = {
       id: 3,
       name: "motion variants",
       description:
-        "ready-made motion variants for react apps",
+        "ready-made motion variants for react apps.",
       imageUrl:
         "https://ik.imagekit.io/manjhss/placeholder-img.png?updatedAt=1765081936295",
       githubUrl: "https://github.com/manjhss/framer-motion-variants",
