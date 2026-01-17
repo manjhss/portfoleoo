@@ -32,19 +32,28 @@ export const portfolioData = {
   projects: [
     {
       id: 1,
+      name: "moon code",
+      description: "a browser-based IDE inspired by Cursor AI.",
+      imageUrl:
+        "https://ik.imagekit.io/manjhss/placeholder-img.png?updatedAt=1765081936295",
+      githubUrl: "https://github.com/manjhss/moon-code",
+      previewUrl: "https://moon-code-eight.vercel.app/",
+    },
+    {
+      id: 2,
       name: "my memories",
       description:
-        "drag, arrange, and design memories your way — on a collaborative canvas with cloud sync.",
+        "a rich collaborative canvas with cloud syncing capabilities.",
       imageUrl:
         "https://ik.imagekit.io/manjhss/placeholder-img.png?updatedAt=1765081936295",
       githubUrl: "https://github.com/manjhss/my-memories",
       previewUrl: "https://my-memories-5zx7.vercel.app",
     },
     {
-      id: 2,
+      id: 3,
       name: "motion variants",
       description:
-        "unleash stunning animations in react with ready-made motion variants.",
+        "ready-made motion variants for react apps",
       imageUrl:
         "https://ik.imagekit.io/manjhss/placeholder-img.png?updatedAt=1765081936295",
       githubUrl: "https://github.com/manjhss/framer-motion-variants",
