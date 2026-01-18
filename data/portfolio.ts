@@ -33,7 +33,7 @@ export const portfolioData = {
     {
       id: 1,
       name: "moon code",
-      description: "a browser-based IDE inspired by Cursor AI.",
+      description: "a browser-based ide inspired by cursor ai.",
       imageUrl:
         "https://ik.imagekit.io/manjhss/placeholder-img.png?updatedAt=1765081936295",
       githubUrl: "https://github.com/manjhss/moon-code",
