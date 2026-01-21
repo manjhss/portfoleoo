@@ -15,18 +15,23 @@ export const portfolioData = {
   proofOfWorks: [
     {
       id: 1,
-      text: "feat(i18n): add german translations for the contact-facing pages",
-      url: "https://github.com/useplunk/plunk/pull/249",
+      text: "fix: resolve invite member role select issue",
+      url: "https://github.com/outray-tunnel/outray/pull/36",
     },
     {
       id: 2,
-      text: "added gamecard component",
-      url: "https://github.com/lohit-pro/fakestake/commit/9ee6200157ff5f26d168a2b45c8edaf69a40509b",
+      text: "feat(i18n): add german translations for the contact-facing pages",
+      url: "https://github.com/useplunk/plunk/pull/249",
     },
     {
       id: 3,
       text: "break up landing page components into sub-components",
       url: "https://github.com/wasp-lang/open-saas/pull/214",
+    },
+    {
+      id: 4,
+      text: "added gamecard component",
+      url: "https://github.com/lohit-pro/fakestake/commit/9ee6200157ff5f26d168a2b45c8edaf69a40509b",
     },
   ],
   projects: [
@@ -52,8 +57,7 @@ export const portfolioData = {
     {
       id: 3,
       name: "motion variants",
-      description:
-        "ready-made motion variants for react apps.",
+      description: "ready-made motion variants for react apps.",
       imageUrl:
         "https://ik.imagekit.io/manjhss/placeholder-img.png?updatedAt=1765081936295",
       githubUrl: "https://github.com/manjhss/framer-motion-variants",
