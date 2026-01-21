@@ -10,16 +10,22 @@ import {
   ItemTitle,
 } from "@/components/ui/item";
 import SectionTitle from "../section-title";
+import { ShowMoreButton } from "../show-more-button";
 
-export function ProofList() {
+interface ProofListProps {
+  isHomepage: boolean;
+}
+
+export function ProofList({ isHomepage }: ProofListProps) {
   const proofs = portfolioData.proofOfWorks;
+  const partialProofs = proofs.slice(0, 3);
 
   return (
-    <div>
+    <div className="space-y-4">
       <SectionTitle title="proof of works" />
 
       <ItemGroup>
-        {proofs.map((item) => (
+        {(isHomepage ? partialProofs : proofs).map((item) => (
           <Item key={item.id} variant="muted" size="sm">
             <ItemMedia>
               <IconButton icon={GitMergeIcon} className="bg-violet-400/90" />
@@ -27,13 +33,23 @@ export function ProofList() {
             <ItemContent>
               <Link href={item.url} className="hover:underline" target="_blank">
                 <ItemTitle>
-                  {item.text} <IconButton icon={LinkSquare02Icon} variant={"link"} size={"icon-sm"} className="text-secondary-foreground" />
+                  {item.text}{" "}
+                  <IconButton
+                    icon={LinkSquare02Icon}
+                    variant={"link"}
+                    size={"icon-sm"}
+                    className="text-secondary-foreground"
+                  />
                 </ItemTitle>
               </Link>
             </ItemContent>
           </Item>
         ))}
       </ItemGroup>
+
+      {isHomepage && proofs.length > 3 && (
+        <ShowMoreButton redirectUrl="/proof-of-works" remainingItems={proofs.length - 3} />
+      )}
     </div>
   );
 }

@@ -11,16 +11,22 @@ import {
   DashboardSquare01Icon,
   LeftToRightListDashIcon,
 } from "@hugeicons/core-free-icons";
+import { ShowMoreButton } from "../show-more-button";
 
-export function ProjectGrid() {
+interface ProjectGridProps {
+  isHomepage: boolean;
+}
+
+export function ProjectGrid({ isHomepage }: ProjectGridProps) {
   const projects = portfolioData.projects;
+  const partialProjects = projects.slice(0, 4);
 
   const [cardStyle, setCardStyle] = useState<"tile" | "large-icon">(
-    "large-icon"
+    "large-icon",
   );
 
   return (
-    <div>
+    <div className="space-y-4">
       <div className="flex items-start justify-between">
         <SectionTitle title="projects" />
 
@@ -30,7 +36,7 @@ export function ProjectGrid() {
             onClick={() => setCardStyle("tile")}
             variant={cardStyle === "tile" ? "outline" : "ghost"}
             className="cursor-auto"
-            />
+          />
           <IconButton
             icon={DashboardSquare01Icon}
             onClick={() => setCardStyle("large-icon")}
@@ -42,16 +48,20 @@ export function ProjectGrid() {
 
       {cardStyle === "large-icon" ? (
         <ItemGroup className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {projects.map((project) => (
+          {(isHomepage ? partialProjects : projects).map((project) => (
             <ProjectCard key={project.id} {...project} />
           ))}
         </ItemGroup>
       ) : (
         <ItemGroup className="gap-3">
-          {projects.map((project) => (
+          {(isHomepage ? partialProjects : projects).map((project) => (
             <ProjectCardTwo key={project.id} {...project} />
           ))}
         </ItemGroup>
+      )}
+
+      {isHomepage && projects.length > 4 && (
+        <ShowMoreButton redirectUrl="/projects" remainingItems={projects.length - 4} />
       )}
     </div>
   );
