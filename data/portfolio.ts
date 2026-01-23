@@ -15,31 +15,36 @@ export const portfolioData = {
   proofOfWorks: [
     {
       id: 1,
+      text: "feat: add clear draft confirmation dialog",
+      url: "https://github.com/rbadillap/pastecn/pull/25",
+    },
+    {
+      id: 2,
       text: "fix(onboarding): sync selected organization with store",
       url: "https://github.com/outray-tunnel/outray/pull/40",
     },
     {
-      id: 2,
+      id: 3,
       text: "fix: adjust tab bar layout to prevent breaking width on smaller screens",
       url: "https://github.com/KartikLabhshetwar/linkpreview/pull/2",
     },
     {
-      id: 3,
+      id: 4,
       text: "fix: resolve invite member role select issue",
       url: "https://github.com/outray-tunnel/outray/pull/36",
     },
     {
-      id: 4,
+      id: 5,
       text: "feat(i18n): add german translations for the contact-facing pages",
       url: "https://github.com/useplunk/plunk/pull/249",
     },
     {
-      id: 5,
+      id: 6,
       text: "break up landing page components into sub-components",
       url: "https://github.com/wasp-lang/open-saas/pull/214",
     },
     {
-      id: 6,
+      id: 7,
       text: "added gamecard component",
       url: "https://github.com/lohit-pro/fakestake/commit/9ee6200157ff5f26d168a2b45c8edaf69a40509b",
     },
