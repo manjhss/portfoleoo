@@ -31,7 +31,7 @@ export function ProofList({ isHomepage }: ProofListProps) {
               <IconButton icon={GitMergeIcon} className="bg-violet-400/90" />
             </ItemMedia>
             <ItemContent>
-              <Link href={item.url} className="hover:underline" target="_blank">
+              <Link href={item.url} target="_blank">
                 <ItemTitle>
                   {item.text}{" "}
                   <IconButton
@@ -48,7 +48,10 @@ export function ProofList({ isHomepage }: ProofListProps) {
       </ItemGroup>
 
       {isHomepage && proofs.length > 3 && (
-        <ShowMoreButton redirectUrl="/proof-of-works" remainingItems={proofs.length - 3} />
+        <ShowMoreButton
+          redirectUrl="/proof-of-works"
+          remainingItems={proofs.length - 3}
+        />
       )}
     </div>
   );

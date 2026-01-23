@@ -11,11 +11,11 @@ export function ShowMoreButton({
   remainingItems,
 }: ShowMoreButtonProps) {
   return (
-    <Link href={redirectUrl}>
+    <Link href={redirectUrl} className="w-full flex justify-center">
       <Button
-        variant="ghost"
+        variant="link"
         size={"lg"}
-        className="w-full text-base text-muted-foreground"
+        className="group text-base text-muted-foreground hover:text-primary dark:hover:text-primary"
       >
         show more ({remainingItems})
       </Button>
